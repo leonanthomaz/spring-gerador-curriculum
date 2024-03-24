@@ -1,9 +1,16 @@
+# Arquivos sensíveis a serem ignorados
+src/main/resources/application.yaml
+frontend/.env
+
+# Diretórios e arquivos que não devem ser ignorados
 HELP.md
-target/
+
+# Diretórios e arquivos que devem ser rastreados, mesmo que estejam dentro de "target"
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Exclusões específicas para IDEs
 ### STS ###
 .apt_generated
 .classpath

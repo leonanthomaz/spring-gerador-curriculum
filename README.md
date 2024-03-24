@@ -67,4 +67,4 @@ Contribuições são bem-vindas! Se você encontrar problemas ou melhorias para 
 
 ## Licença
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto está licenciado sob a [MIT License](backend/LICENSE).
