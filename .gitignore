@@ -1,5 +1,6 @@
 # Arquivos sensíveis a serem ignorados
-src/main/resources/application.yaml
+backend/src/main/resources/application.yaml
+backend/docker-compose.yaml
 frontend/.env
 
 # Diretórios e arquivos que não devem ser ignorados
