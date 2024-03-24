@@ -16,7 +16,6 @@ import java.io.FileNotFoundException;
 @RestController
 @RequestMapping("curriculum")
 public class CurriculumController {
-
     private final PDFGenerator pdfGenerator;
 
     /**
