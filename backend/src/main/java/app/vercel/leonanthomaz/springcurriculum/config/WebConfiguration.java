@@ -5,10 +5,16 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * Setando configuração para liberar o endpoint do frontend (escolhida pro projeto o http://localhost:3000)
+ * Configuração para permitir requisições Cross-Origin Resource Sharing (CORS).
  */
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
+
+    /**
+     * Adiciona mapeamentos CORS para permitir requisições de origens específicas.
+     *
+     * @param registry o registro de mapeamentos CORS
+     */
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

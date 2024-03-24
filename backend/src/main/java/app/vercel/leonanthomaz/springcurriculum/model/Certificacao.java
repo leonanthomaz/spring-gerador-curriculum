@@ -10,6 +10,9 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/**
+ * Representa a certificação de um usuário.
+ */
 @Entity
 @Table(name = "tb_certificacao")
 @AllArgsConstructor
@@ -22,9 +25,16 @@ public class Certificacao implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    /** Nome da certificação. */
     private String nome;
+    /** Nome da instituição da certificação. */
     private String instituicao;
+    /** Data de conclusão da certificação. */
     private LocalDate dataConclusao;
+    /**
+     * O usuário associado a esta certificação.
+     * Muitas certificações pertence a um único usuário.
+     */
     @ManyToOne
     @JoinColumn(name = "usuario_id")
     @JsonBackReference
